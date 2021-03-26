@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="TestVoda" Height="768" Width="1024" Background="#00000000" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True">
+    <Grid Background="#00000000">
+        <Grid x:Name="body" Margin="51, 50, 51, 698" Background="White" Panel.ZIndex="-1">
+            <Grid Margin="10,0" Background="Gainsboro">
+                <Grid HorizontalAlignment="Center" Height="638" Margin="10,40,10,0" VerticalAlignment="Top" Width="882">
+                    <Image Height="143" Margin="335,0,337,0" VerticalAlignment="Top" Source="logo_220.png" OpacityMask="{x:Null}" HorizontalAlignment="Center" Width="210"/>
+                </Grid>
+                <Grid x:Name="telo" Margin="0,188,0,10"/>
+            </Grid>
+        </Grid>
+        <Grid x:Name="bottom" Height="60" Margin="0, 60, 0, 0" VerticalAlignment="Top" MouseDown="bottom_MouseDown">
+            <Rectangle Fill="#FFB49300" RadiusY="20" RadiusX="10" Stroke="Black" Margin="0,9" HorizontalAlignment="Left" Width="41"/>
+            <Rectangle Fill="#FFB49300" RadiusY="20" RadiusX="10" Stroke="Black" Margin="0,9" HorizontalAlignment="Right" Width="41"/>
+            <Rectangle x:Name="bottomscroll" Fill="White" Margin="46,9" RadiusY="10" RadiusX="5" Stroke="Black"/>
+            <Rectangle Fill="#FF0A0A0A" RadiusY="20" RadiusX="10" Stroke="Black" Margin="10,12,10,12" Panel.ZIndex="-1"/>
+        </Grid>
+        <Grid x:Name="header" Height="60" VerticalAlignment="Top" MouseDown="header_MouseDown">
+            <Rectangle Fill="#FFB49300" RadiusY="20" RadiusX="10" Stroke="Black" Margin="0,9" HorizontalAlignment="Left" Width="41"/>
+            <Rectangle Fill="#FFB49300" RadiusY="20" RadiusX="10" Stroke="Black" Margin="0,9" HorizontalAlignment="Right" Width="41"/>
+            <Rectangle x:Name="headerscroll" Fill="White" Margin="46,9" RadiusY="10" RadiusX="5" Stroke="Black"/>
+            <Rectangle Fill="#FF0A0A0A" RadiusY="20" RadiusX="10" Stroke="Black" Margin="10,12,10,12" Panel.ZIndex="-1"/>
+        </Grid>
     </Grid>
 </Window>
